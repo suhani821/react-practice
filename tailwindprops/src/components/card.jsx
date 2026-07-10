@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({views ="0" , btntext="more info"}) {
+function Card({views ="0" , btntext="more info" , maintext ="card"}) {
     return(<>
 
 
@@ -8,7 +8,7 @@ function Card({views ="0" , btntext="more info"}) {
       <div className="relative overflow-hidden rounded-lg mb-6">
         <img
           src="https://picsum.photos/400/300?random=90"
-          alt="Featured content"
+          alt={maintext}
           width={400}
           height={300}
           className="object-cover object-center w-full h-48 transition-transform duration-300 group-hover:scale-110"
@@ -18,7 +18,7 @@ function Card({views ="0" , btntext="more info"}) {
 
       <div className="mb-4">
         <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase bg-white text-black rounded-full mb-3">
-          Featured
+          {maintext}
         </span>
         <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-200">
           Modern Design Solutions
