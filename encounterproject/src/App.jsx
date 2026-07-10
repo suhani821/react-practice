@@ -11,7 +11,11 @@ function addval(){
   setCounter(counter);
 }
 function decval(){
+  if(counter===0){
+    setCounter(counter===0);
+  }
   setCounter(counter--);
+  
 }
 return(<>
  <h1>hello world!</h1>
