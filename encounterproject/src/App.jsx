@@ -7,14 +7,15 @@ import './App.css'
 function App() {
 let [counter,setCounter]=useState(7);
 function addval(){
-  counter = counter+1;
+  if(counter<20){counter = counter+1;}
+  
   setCounter(counter);
 }
 function decval(){
-  if(counter===0){
-    setCounter(counter===0);
+  if(counter>=0){
+   setCounter(counter--);
   }
-  setCounter(counter--);
+  
   
 }
 return(<>
