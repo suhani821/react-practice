@@ -12,7 +12,7 @@ function App() {
   const [numAllowed, setnumAllowed] = useState(false);
 function Copytokeyboard(){
   passwordref.current.select()
-  passwordref.current.setSelectionRange(0,2)
+  // passwordref.current.setSelectionRange(0,2)
 
   window.navigator.clipboard.writeText(password)
 }
