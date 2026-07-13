@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 export default function Home() {
     return (
         <div className="mx-auto w-full max-w-7xl">
@@ -30,12 +31,12 @@ export default function Home() {
                 </div>
 
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
+                    <img className="w-96" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9CzFVITn4X3Zfru2jSxZnFF6qCXNVU0bKJ4UPVcPmA&s=10" alt="image1" />
                 </div>
             </aside>
 
             <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
+                <img className="sm:w-96 w-48" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNeKLeyrPRaVzaJSB1mtkk6BDZPrATFqQhvCfz4mkovA&s=10" alt="image2" />
             </div>
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>

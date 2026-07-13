@@ -1,4 +1,6 @@
 import React from "react"
+import {Link, NavLink} from 'react-router-dom'
+
 function Header() {
     return (
         <header className="shadow sticky z-50 top-0">
@@ -40,7 +42,36 @@ function Header() {
                                     Home
                                 </NavLink>
                             </li>
-                            
+                            <li>
+                                <NavLink
+                                    to="/About"
+                                    className={() =>
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                             <li>
+                                <NavLink
+                                    to="/Contact"
+                                    className={() =>
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                   Contect Us
+                                </NavLink>
+                            </li>
+                             <li>
+                                <NavLink
+                                    to="/Github"
+                                    className={() =>
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Github
+                                </NavLink>
+                            </li>
                             
                         </ul>
                     </div>
@@ -50,4 +81,4 @@ function Header() {
     );
 }
 
-export default header
+export default Header
